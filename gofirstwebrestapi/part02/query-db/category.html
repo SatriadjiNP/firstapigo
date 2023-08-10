@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="100%" style="font-size: 20px;">
+        <center>
+            <th style="background-color: aqua;">Category Id</th>
+            <th style="background-color: aqua;">Category Name</th>
+            <th style="background-color: aqua;">Category Description</th>
+        </center>
+            <tbody>
+                <!-- pemanggilan -->
+            {{range .}}
+                <tr style="font-size: 18px;">
+                    <td align="center">{{.CategoryId}}</td>
+                    <td>{{.CategoryName}}</td>
+                    <td>{{.Desription}}</td>
+                </tr>
+            {{end}}
+        </tbody>
+    </table>
+</body>
+</html>
